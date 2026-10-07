@@ -35,3 +35,38 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* 渗滤液：整组班次交接 */
+.batch-bar { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; }
+.batch-title { font-size: 13px; font-weight: 600; margin-bottom: 8px; display: flex; gap: 10px; align-items: baseline; }
+.batch-hint { font-weight: 400; font-size: 12px; color: var(--muted); }
+.batch-fields { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+.batch-fields select, .batch-fields input { border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 13px; }
+.btn:disabled { opacity: .55; cursor: not-allowed; }
+.col-check { width: 36px; text-align: center; }
+.check-locked { color: #b6bfcc; }
+.row-selected { background: #f0f6ff; }
+.abnormal-flag { margin-left: 6px; background: #fef3f2; color: #b42318; border: 1px solid #fecdca; border-radius: 999px; padding: 0 8px; font-size: 11px; }
+
+/* 整批回执 */
+.receipt { background: #fff; border: 1px solid #b7ddc0; border-left: 4px solid #1a9e56; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; }
+.receipt-error { border-color: #fecdca; border-left-color: #d92d20; }
+.receipt-head { display: flex; gap: 12px; align-items: center; font-size: 13px; margin-bottom: 8px; }
+.receipt-head span { color: var(--muted); font-size: 12px; flex: 1; }
+.receipt-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.receipt-item { display: flex; gap: 8px; align-items: baseline; font-size: 13px; }
+.receipt-code { min-width: 96px; font-weight: 600; }
+.receipt-tag { border-radius: 999px; padding: 0 8px; font-size: 11px; }
+.tag-success { background: #e7f8ee; color: #067647; }
+.tag-failed { background: #fef3f2; color: #b42318; }
+.tag-skipped { background: #eef2f7; color: var(--muted); }
+.receipt-reason { color: #475467; }
+
+/* 详情弹窗 */
+.modal-mask { position: fixed; inset: 0; background: rgba(16, 24, 40, .45); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal-card { background: #fff; border-radius: 10px; width: 560px; max-width: calc(100vw - 32px); max-height: calc(100vh - 64px); overflow: auto; padding: 16px 18px; }
+.modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 16px; margin: 0; }
+.detail-item { margin: 0; }
+.detail-item dt { font-size: 12px; color: var(--muted); }
+.detail-item dd { margin: 2px 0 0; font-size: 13px; }
